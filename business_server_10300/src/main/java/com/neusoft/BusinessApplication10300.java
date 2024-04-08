@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class MyApplication {
+public class BusinessApplication10300 {
     //向容器中添加RestTemplate实例
     @Bean
     public RestTemplate getRestTemplate() {
@@ -14,6 +14,6 @@ public class MyApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(MyApplication.class, args);
+        SpringApplication.run(BusinessApplication10300.class, args);
     }
 }
