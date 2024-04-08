@@ -12,6 +12,15 @@ public class User {
     private Integer userSex;
     private String userImg;
     private Integer delTag;
+    private Integer point;
+
+    public Integer getPoint() {
+        return point;
+    }
+
+    public void setPoint(Integer point) {
+        this.point = point;
+    }
 
     public String getUserId() {
         return userId;

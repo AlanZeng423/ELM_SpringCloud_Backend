@@ -19,7 +19,7 @@ public class Orders {
     //多对一：所属商家
     private Business business;
     //一对多：订单明细
-    private List<OrderDetailet> list;
+    private List<OrderDetailed> list;
 
     public Integer getOrderId() {
         return orderId;
@@ -85,11 +85,11 @@ public class Orders {
         this.business = business;
     }
 
-    public List<OrderDetailet> getList() {
+    public List<OrderDetailed> getList() {
         return list;
     }
 
-    public void setList(List<OrderDetailet> list) {
+    public void setList(List<OrderDetailed> list) {
         this.list = list;
     }
 }

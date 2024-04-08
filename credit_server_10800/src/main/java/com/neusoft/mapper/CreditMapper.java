@@ -13,11 +13,13 @@ import java.util.List;
 @Mapper
 public interface CreditMapper {
     //get total credit by userId and not deleted
-    @Select("select * from credit_copy where userId=#{userId} and deleted=0")
+//    @Select("select * from credit_copy where userId=#{userId} and deleted=0")
+    @Select("select point from user where userId = #{userId}")
     public List<Credit> getTotalCreditByUserId(String userId);
 
     //get credit by userId
-    @Select("select * from credit where userId=#{userId}")
+//    @Select("select * from credit where userId=#{userId}")
+    @Select("select point from user where userId = #{userId}")
     public List<Credit> getCreditByUserId(String userId);
 
     //get credit by userId and channelType

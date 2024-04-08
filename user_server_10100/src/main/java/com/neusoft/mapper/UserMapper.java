@@ -7,12 +7,14 @@ import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface UserMapper {
+//    @Select("select * from user where userId=#{userId} and password=#{password}")
     @Select("select * from user where userId=#{userId} and password=#{password}")
     public User getUserByIdByPass(User user);
 
     @Select("select count(*) from user where userId=#{userId}")
     public int getUserById(String userId);
 
-    @Insert("insert into user values(#{userId},#{password},#{userName},#{userSex},null,1)")
+//    @Insert("insert into user values(#{userId},#{password},#{userName},#{userSex},null,1)")
+    @Insert("insert into user values(#{userId},#{password},#{userName},#{userSex},null,1,0)")
     public int saveUser(User user);
 }

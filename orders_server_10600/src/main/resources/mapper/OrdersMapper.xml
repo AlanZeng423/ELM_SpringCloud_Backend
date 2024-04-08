@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.neusoft.mapper.OrdersMapper">
+
     <resultMap type="Orders" id="ordersResultMap">
         <id column="orderId" property="orderId"/>
         <result column="userId" property="userId"/>
@@ -13,15 +14,17 @@
         <association property="business" javaType="Business"
                      select="com.neusoft.mapper.BusinessMapper.getBusinessById"
                      column="businessId"/>
-        <collection property="list" ofType="OrderDetailet"
-                    select="com.neusoft.mapper.OrderDetailetMapper.listOrderDetailetByOrderId"
+        <collection property="list" ofType="OrderDetailed"
+                    select="com.neusoft.mapper.OrderDetailedMapper.listOrderDetailedByOrderId"
                     column="orderId"/>
     </resultMap>
+
     <select id="getOrdersById" parameterType="Integer" resultMap="ordersResultMap">
         select *
         from orders
         where orderId = #{orderId}
     </select>
+
     <select id="listOrdersByUserId" parameterType="String" resultMap="ordersResultMap">
         select *
         from orders

@@ -15,4 +15,8 @@ public interface OrdersService {
     public Orders getOrdersById(Integer orderId);
 
     public List<Orders> listOrdersByUserId(String userId);
+
+    int updateOrder(Integer orderId, Integer orderState);
+
+    int updateOrders(Integer orderId, Double orderTotal);
 }

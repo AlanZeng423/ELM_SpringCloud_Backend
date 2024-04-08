@@ -13,8 +13,8 @@
         <association property="business" javaType="Business"
                      select="com.neusoft.mapper.BusinessMapper.getBusinessById"
                      column="businessId"/>
-        <collection property="list" ofType="OrderDetailet"
-                    select="com.neusoft.mapper.OrderDetailetMapper.listOrderDetailetByOrderId"
+        <collection property="list" ofType="OrderDetailed"
+                    select="com.neusoft.mapper.OrderDetailedMapper.listOrderDetailedByOrderId"
                     column="orderId"/>
     </resultMap>
     <select id="getOrdersById" parameterType="Integer" resultMap="ordersResultMap">

@@ -8,11 +8,7 @@ import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/9/12 12:48
- * @Description: 这里参考pdf里给错了
- */
+
 @Mapper
 public interface OrdersMapper {
     @Insert("insert into orders(userId,businessId,orderDate,orderTotal,daId,orderState) values(#{userId},#{businessId},#{orderDate},#{orderTotal},#{daId},0)")
@@ -25,4 +21,10 @@ public interface OrdersMapper {
 
     @Update("update orders set orderState=1 where orderId=#{orderId}")
     public int updateOrderState(Integer orderId);
+
+    @Update("update orders set orderState = #{orderState} where orderId = #{orderId}")
+    public int updateOrder(Integer orderId, Integer orderState);
+
+    @Update("update orders set orderTotal = #{orderTotal} where orderId = #{orderId}")
+    public int updateOrders(Integer orderId, double orderTotal);
 }

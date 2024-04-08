@@ -5,7 +5,7 @@ package com.neusoft.po;
  * @Date：2022/8/21 16:26
  * @Description:
  */
-public class OrderDetailet {
+public class OrderDetailed {
     private Integer odId;
     private Integer orderId;
     private Integer foodId;
