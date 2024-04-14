@@ -10,9 +10,9 @@ spring:
   application:
     name: cart-server
   datasource:
-    username: root
-    password: 123
-    url: jdbc:mysql://localhost:3306/elm?characterEncoding=utf-8&serverTimezone=UTC
+    username: elm
+    password: ncNMRKhLsDXHZZw2
+    url: jdbc:mysql://123.57.229.25:3306/elm?characterEncoding=utf-8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
