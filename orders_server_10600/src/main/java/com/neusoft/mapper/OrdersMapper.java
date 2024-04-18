@@ -1,10 +1,7 @@
 package com.neusoft.mapper;
 
 import com.neusoft.po.Orders;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -23,7 +20,7 @@ public interface OrdersMapper {
     public int updateOrderState(Integer orderId);
 
     @Update("update orders set orderState = #{orderState} where orderId = #{orderId}")
-    public int updateOrder(Integer orderId, Integer orderState);
+    public int updateOrder(@Param("orderId") Integer orderId, @Param("orderState") Integer orderState);
 
     @Update("update orders set orderTotal = #{orderTotal} where orderId = #{orderId}")
     public int updateOrders(Integer orderId, double orderTotal);

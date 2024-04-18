@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.neusoft.mapper.OrderDetailedMapper">
     <insert id="saveOrderDetailedBatch" parameterType="OrderDetailed">
-        insert into orderDetailed(orderId,foodId,quantity) values
+        insert into orderdetailed(orderId,foodId,quantity) values
         <foreach collection="list" item="od" separator=",">
             (#{od.orderId},#{od.foodId},#{od.quantity})
         </foreach>
@@ -21,7 +21,7 @@
     <select id="listOrderDetailedByOrderId" parameterType="Integer"
             resultMap="orderDetailedResultMap">
         select *
-        from orderDetailed
+        from orderdetailed
         where orderId = #{orderId}
     </select>
 </mapper>

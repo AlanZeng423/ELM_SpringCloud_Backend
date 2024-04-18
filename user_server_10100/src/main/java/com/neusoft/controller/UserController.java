@@ -30,4 +30,16 @@ public class UserController {
         int result = userService.saveUser(user);
         return new CommonResult(200, "success", result);
     }
+
+    @PostMapping("/updatePoint")
+    public CommonResult<Integer> updatePoint(User user) throws Exception {
+        int result = userService.updatePoint(user);
+        return new CommonResult(200, "success", result);
+    }
+
+    @GetMapping("/getPointById")
+    public CommonResult<Double> getPointById(User user) throws Exception {
+        double result = userService.getPointById(user.getUserId());
+        return new CommonResult(200, "success", result);
+    }
 }

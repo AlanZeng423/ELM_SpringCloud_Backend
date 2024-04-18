@@ -8,4 +8,5 @@ public class CreditMyApplication10800 {
     public static void main(String[] args) {
         SpringApplication.run(CreditMyApplication10800.class, args);
     }
+
 }

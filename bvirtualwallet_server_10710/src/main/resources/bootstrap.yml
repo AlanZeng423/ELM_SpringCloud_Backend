@@ -10,7 +10,7 @@ spring:
     name: bvirtualwallet-server
   datasource:
     username: elm
-    password: ncNMRKhLsDXHZZw2
+    password: 5JpJGwCrxtL8yBKZ
     url: jdbc:mysql://123.57.229.25:3306/elm?characterEncoding=utf-8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
 

@@ -8,4 +8,8 @@ public interface UserService {
     public int getUserById(String userId);
 
     public int saveUser(User user);
+
+    public int updatePoint(User user);
+
+    double getPointById(String userId);
 }

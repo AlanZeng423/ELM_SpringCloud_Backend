@@ -6,6 +6,7 @@ import com.neusoft.service.DeliveryAddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -20,7 +21,11 @@ public class DeliveryAddressServiceImpl implements DeliveryAddressService {//注
 
     @Override
     public List<DeliveryAddress> listDeliveryAddressByUserId(String userId) {
-        return deliveryAddressMapper.listDeliveryAddressByUserId(userId);
+        try {
+            return deliveryAddressMapper.listDeliveryAddressByUserId(userId);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -40,6 +45,10 @@ public class DeliveryAddressServiceImpl implements DeliveryAddressService {//注
 
     @Override
     public int removeDeliveryAddress(Integer daId) {
-        return deliveryAddressMapper.removeDeliveryAddress(daId);
+        try {
+            return deliveryAddressMapper.removeDeliveryAddress(daId);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
