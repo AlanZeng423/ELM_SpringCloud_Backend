@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/8/21 16:06
- * @Description:
- */
+
 public class Business {
     private Integer businessId;
     private String businessName;

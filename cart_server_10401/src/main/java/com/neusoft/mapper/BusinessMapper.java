@@ -1,10 +1,5 @@
 package com.neusoft.mapper;
 
-/**
- * @Author：ljz
- * @Date：2022/9/6 19:26
- * @Description:
- */
 
 import com.neusoft.po.Business;
 import org.apache.ibatis.annotations.Mapper;

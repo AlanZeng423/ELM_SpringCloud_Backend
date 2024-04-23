@@ -12,11 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/9/12 13:28
- * @Description:
- */
+
 @RefreshScope
 @RestController
 @RequestMapping("/Orders")

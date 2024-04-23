@@ -23,7 +23,10 @@ mybatis:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:13000/eureka,http://localhost:13002/eureka
+      #需要注册给Eureka Server的地址，也就是将自己注册给哪一个Eureka Server
+      defaultZone: http://eurekaServer13000:13000/eureka,http://eurekaServer13002:13002/eureka
   instance:
-    prefer-ip-address: true #使用ip地址向Eureka注册
-    instance-id: ${spring.cloud.client.ip-address}:${server.port} #自定义微服务实例ID
+    #使用ip地址向Eureka注册
+    prefer-ip-address: true
+    #上面的配置已经可以使用ip注册了，但显示的还是主机名，所以这里设置显示的注册名
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

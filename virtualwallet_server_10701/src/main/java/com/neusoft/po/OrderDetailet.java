@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/8/21 16:26
- * @Description:
- */
+
 public class OrderDetailet {
     private Integer odId;
     private Integer orderId;

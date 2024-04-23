@@ -9,11 +9,7 @@ import org.springframework.stereotype.Service;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/9/12 11:04
- * @Description:
- */
+
 @Service
 public class DeliveryAddressServiceImpl implements DeliveryAddressService {//注意这里要有service的标签才能自动装盘
     @Autowired

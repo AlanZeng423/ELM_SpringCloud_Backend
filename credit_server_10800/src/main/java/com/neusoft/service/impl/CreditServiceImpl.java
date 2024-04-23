@@ -11,11 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/11/21 15:49
- * @Description:
- */
+
 @Service
 public class CreditServiceImpl implements CreditService {
     @Autowired

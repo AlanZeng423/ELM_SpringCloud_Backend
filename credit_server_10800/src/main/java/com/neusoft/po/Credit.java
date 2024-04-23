@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/11/21 15:24
- * @Description:
- */
+
 public class Credit {
     private Integer creditId;
 

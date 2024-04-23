@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/8/21 16:13
- * @Description:
- */
+
 public class Cart {
     private Integer cartId;
     private Integer foodId;

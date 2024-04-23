@@ -5,11 +5,7 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/11/21 15:36
- * @Description:
- */
+
 @Mapper
 public interface CreditMapper {
     //get total credit by userId and not deleted

@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/8/21 16:17
- * @Description:
- */
+
 public class DeliveryAddress {
     private Integer daId;
     private String contactName;

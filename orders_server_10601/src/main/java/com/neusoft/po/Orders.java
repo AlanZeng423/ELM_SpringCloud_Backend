@@ -2,11 +2,7 @@ package com.neusoft.po;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/8/21 16:28
- * @Description:
- */
+
 public class Orders {
     private Integer orderId;
     private String userId;

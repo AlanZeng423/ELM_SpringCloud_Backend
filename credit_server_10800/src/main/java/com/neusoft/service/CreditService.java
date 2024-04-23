@@ -4,11 +4,7 @@ import com.neusoft.po.Credit;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/11/21 15:45
- * @Description:
- */
+
 public interface CreditService {
     //get total credit by userId
     public Integer getTotalCreditByUserId(String userId);

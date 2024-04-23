@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/8/17 17:13
- * @Description:
- */
+
 public class User {
     private String userId;
     private String password;

@@ -8,11 +8,7 @@ import com.neusoft.po.Business;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/9/6 19:32
- * @Description:
- */
+
 @Service
 public class BusinessServiceImpl implements BusinessService {
     @Autowired

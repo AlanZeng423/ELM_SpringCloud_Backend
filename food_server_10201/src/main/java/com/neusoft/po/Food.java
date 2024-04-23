@@ -1,10 +1,6 @@
 package com.neusoft.po;
 
-/**
- * @Author：ljz
- * @Date：2022/8/21 16:14
- * @Description:
- */
+
 public class Food {
     private Integer foodId;
     private String foodName;

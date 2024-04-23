@@ -5,11 +5,7 @@ import com.neusoft.util.CommonUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/11/24 15:16
- * @Description:
- */
+
 public class CreditList {
     private List<Credit> list;
     private List<Credit> expiredList = new ArrayList<>();

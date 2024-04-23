@@ -23,9 +23,7 @@ mybatis:
 eureka:
   client:
     service-url:
-#      defaultZone: http://eurekaServer13000:13000/eureka,http://eurekaServer13002:13002/eureka
-      defaultZone: http://localhost:13000/eureka,http://localhost:13002/eureka
-
+      defaultZone: http://eurekaServer13000:13000/eureka,http://eurekaServer13002:13002/eureka
   instance:
     prefer-ip-address: true #??ip???Eureka??
-    instance-id: ${spring.cloud.client.ip-address}:${server.port} #????????ID
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}

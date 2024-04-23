@@ -3,11 +3,7 @@ package com.neusoft.util;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-/**
- * @Author：ljz
- * @Date：2022/8/24 14:27
- * @Description: 获取日期
- */
+
 public class CommonUtil {
     public static String getCurrentDate1() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

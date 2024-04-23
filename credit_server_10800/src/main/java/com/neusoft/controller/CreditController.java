@@ -1,10 +1,6 @@
 package com.neusoft.controller;
 
-/**
- * @Author：ljz
- * @Date：2022/11/21 15:54
- * @Description:
- */
+
 
 import com.neusoft.po.CommonResult;
 import com.neusoft.po.Credit;

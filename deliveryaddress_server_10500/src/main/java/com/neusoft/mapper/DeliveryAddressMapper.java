@@ -1,10 +1,6 @@
 package com.neusoft.mapper;
 
-/**
- * @Author：ljz
- * @Date：2022/9/12 11:01
- * @Description:
- */
+
 
 import com.neusoft.po.DeliveryAddress;
 import org.apache.ibatis.annotations.*;

@@ -13,11 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-/**
- * @Author：ljz
- * @Date：2022/9/6 19:36
- * @Description:
- */
+
 
 @RefreshScope
 @RestController
