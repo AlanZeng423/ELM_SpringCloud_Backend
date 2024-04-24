@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RefreshScope
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/")
 public class UserController {
 
     @Autowired
@@ -35,13 +35,13 @@ public class UserController {
         return new CommonResult(200, "success", result);
     }
 
-    @PostMapping("/updatePoint")
+    @PostMapping("/Point")
     public CommonResult<Integer> updatePoint(User user) throws Exception {
         int result = userService.updatePoint(user);
         return new CommonResult(200, "success", result);
     }
 
-    @GetMapping("/getPointById")
+    @GetMapping("/Point")
     public CommonResult<Double> getPointById(User user) throws Exception {
         double result = userService.getPointById(user.getUserId());
         return new CommonResult(200, "success", result);

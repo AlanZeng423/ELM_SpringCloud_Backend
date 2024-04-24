@@ -16,7 +16,7 @@ import java.util.List;
 
 @RefreshScope
 @RestController
-@RequestMapping("/Credit")
+@RequestMapping("/")
 public class CreditController {
     @Autowired
     private CreditService creditService;

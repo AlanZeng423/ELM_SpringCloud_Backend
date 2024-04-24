@@ -12,7 +12,7 @@ import java.util.List;
 
 @RefreshScope
 @RestController
-@RequestMapping("/Cart")
+@RequestMapping("/")
 public class CartController {
     @Autowired
     private CartService cartService;

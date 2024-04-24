@@ -8,7 +8,7 @@ import com.neusoft.po.User;
 import com.neusoft.service.UserService;
 @RefreshScope
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/")
 public class UserController {
 
     @Autowired

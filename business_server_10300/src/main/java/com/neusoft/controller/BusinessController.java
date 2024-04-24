@@ -17,7 +17,7 @@ import java.util.List;
 
 @RefreshScope
 @RestController
-@RequestMapping("/Business")
+@RequestMapping("/")
 public class BusinessController {
     @Autowired
     private BusinessService businessService;

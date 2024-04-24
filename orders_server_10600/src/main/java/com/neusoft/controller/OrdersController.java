@@ -12,7 +12,7 @@ import java.util.List;
 
 @RefreshScope
 @RestController
-@RequestMapping("/Orders")
+@RequestMapping("/")
 public class OrdersController {
     @Autowired
 

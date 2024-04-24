@@ -14,7 +14,7 @@ import java.util.List;
 
 @RefreshScope
 @RestController
-@RequestMapping("/Food")
+@RequestMapping("/")
 public class FoodController {
 
     @Autowired

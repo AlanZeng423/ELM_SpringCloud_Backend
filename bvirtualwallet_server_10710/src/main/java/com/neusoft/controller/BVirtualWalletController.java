@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RefreshScope //开启动态刷新
 @RestController
-@RequestMapping("/BVirtualWallet")
+@RequestMapping("/")
 public class BVirtualWalletController {
     @Autowired
     private BVirtualWalletService bVirtualWalletService;

@@ -13,7 +13,7 @@ import java.util.List;
 
 @RefreshScope
 @RestController
-@RequestMapping("/DeliveryAddress")
+@RequestMapping("/")
 public class DeliveryAddressController {
     @Autowired
     private DeliveryAddressService deliveryAddressService;
