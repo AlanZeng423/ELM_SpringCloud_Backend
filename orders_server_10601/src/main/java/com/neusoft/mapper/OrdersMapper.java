@@ -23,5 +23,5 @@ public interface OrdersMapper {
     public int updateOrder(@Param("orderId") Integer orderId, @Param("orderState") Integer orderState);
 
     @Update("update orders set orderTotal = #{orderTotal} where orderId = #{orderId}")
-    public int updateOrders(Integer orderId, double orderTotal);
+    public int updateOrders(@Param("orderId") Integer orderId, @Param("orderTotal") double orderTotal);
 }

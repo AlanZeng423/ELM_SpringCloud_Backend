@@ -35,11 +35,11 @@ public class OrdersController {
 
     @PostMapping("/updateOrder")
     public CommonResult<Integer> updateOrder(Orders orders) throws Exception {
-        return new CommonResult<>(200, "success", ordersService.updateOrder(orders.getOrderId(),orders.getOrderState()));
+        return new CommonResult<>(200, "success", ordersService.updateOrder(orders.getOrderId(), orders.getOrderState()));
     }
 
     @PostMapping("/updateOrders")
     public CommonResult<Integer> updateOrders(Orders orders) throws Exception {
-        return new CommonResult<>(200, "success", ordersService.updateOrders(orders.getOrderId(),orders.getOrderTotal()));
+        return new CommonResult<>(200, "success", ordersService.updateOrders(orders.getOrderId(), orders.getOrderTotal()));
     }
 }
