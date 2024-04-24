@@ -1,5 +1,6 @@
 server:
   port: 14001
+
 spring:
   application:
     name: gateway-server
@@ -80,3 +81,16 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port} #??eureka???????????
     lease-renewal-interval-in-seconds: 5 #??????
     lease-expiration-duration-in-seconds: 15 #??????
+
+knife4j:
+  gateway:
+    # ① 第一个配置，开启gateway聚合组件
+    enabled: true
+    # ② 第二行配置，设置聚合模式采用discover服务发现的模式
+    strategy: discover
+    discover:
+      # ③ 第三行配置，开启discover模式
+      enabled: true
+      # ④ 第四行配置，聚合子服务全部为Swagger2规范的文档
+      version: swagger2
+# 这个是配置不用看token是否合法 直接通过

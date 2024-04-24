@@ -24,6 +24,11 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+            <version>4.3.0</version>
+        </dependency>
         <!--以下是boot -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

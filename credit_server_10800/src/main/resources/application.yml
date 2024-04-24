@@ -1,6 +1,7 @@
 server:
   port: 10800
-
+  servlet:
+    context-path: /Credit
 logging:
   level:
     org.springframework: debug
@@ -27,3 +28,5 @@ eureka:
   instance:
     prefer-ip-address: true #??ip???Eureka??
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+knife4j:
+  enable: true

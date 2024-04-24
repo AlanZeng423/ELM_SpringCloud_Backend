@@ -36,4 +36,5 @@ public class BusinessController {
         return new CommonResult<Business>(200, "success",
                 businessService.getBusinessById(business.getBusinessId()));
     }
+
 }

@@ -10,6 +10,11 @@
     </parent>
     <artifactId>business_server_10301</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+            <version>4.3.0</version>
+        </dependency>
         <!-- 消息总线依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -1,6 +1,7 @@
 server:
   port: 10200
-
+  servlet:
+    context-path: /Food
 logging:
   level:
     org.springframework: debug
@@ -29,3 +30,5 @@ eureka:
     prefer-ip-address: true
     #上面的配置已经可以使用ip注册了，但显示的还是主机名，所以这里设置显示的注册名
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
+knife4j:
+  enable: true
